@@ -287,6 +287,7 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
+    start gmbootscript
     start mpdecision
 
 on property:init.svc.wpa_supplicant=stopped
@@ -492,6 +493,7 @@ service thermal-engine /system/bin/thermal-engine-hh
    class main
    user root
    group radio system
+   disabled
 
 service vss_init /vendor/bin/vss_init
     class late_start
@@ -503,3 +505,9 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
+
+service gmbootscript /sbin/gmbootscript.sh
+    class late_start
+        user root
+        disabled
+    oneshot
