@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
     device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
+    device/lge/hammerhead/sbin/gamerbootscript.sh:root/sbin/gamerbootscript.sh \
     device/lge/hammerhead/ueventd.hammerhead.rc:root/ueventd.hammerhead.rc
 
 # Input device files for hammerhead
@@ -36,6 +37,12 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/Button_Jack.kcm:system/usr/keychars/msm8974-taiko-mtp-snd-card_Button_Jack.kcm \
     device/lge/hammerhead/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
     device/lge/hammerhead/hs_detect.kcm:system/usr/keychars/hs_detect.kcm
+
+# Prebuilt modules
+PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
+    device/lge/hammerhead/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
+    device/lge/hammerhead/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
