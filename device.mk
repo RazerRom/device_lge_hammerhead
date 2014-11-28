@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
+#Mpdecision init.d script
+PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/25compat:system/etc/init.d/25compat
+
 # GPS configuration
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/gps.conf:system/etc/gps.conf
