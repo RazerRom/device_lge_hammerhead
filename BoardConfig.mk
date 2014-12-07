@@ -112,6 +112,8 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
+TOUCH_BOOST_DEBUG := false
+
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
