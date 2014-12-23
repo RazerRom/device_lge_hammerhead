@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
     device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
+    device/lge/hammerhead/sbin/gmbootscript.sh:root/sbin/gmbootscript.sh \
     device/lge/hammerhead/ueventd.hammerhead.rc:root/ueventd.hammerhead.rc
 
 # Input device files for hammerhead
@@ -178,10 +179,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     power.msm8974
-
-#Mpdecision init.d script
-PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/25compat:system/etc/init.d/25compat
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
