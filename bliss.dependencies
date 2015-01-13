@@ -1,0 +1,14 @@
+[
+ {
+   "remote": "TeamBliss-Devices",
+   "repository": "android_kernel_lge_hammerhead",
+   "target_path": "kernel/lge/hammerhead",
+   "revision": "lp5.0"
+ },
+ {
+   "remote": "cm",
+   "repository": "android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "revision": "cm-12.0"
+ }
+]
