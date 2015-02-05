@@ -114,6 +114,11 @@ TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 TOUCH_BOOST_DEBUG := false
 
+# GamerMod Optimizations
+GAMERMOD := true
+GRAPHITE_OPTS := true
+STRICT_ALIASING := false
+
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
