@@ -109,7 +109,7 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := hybrid_hammerhead_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 #GamerMod Optimizations
@@ -120,7 +120,7 @@ GM_O3 := true
 GM_STRICT := true
 GM_KRAIT := true
 GM_GRAPHITE := true
-GM_BUILD_BLOCK := 0
+GM_BUILD_BLOCK := 1
 TOUCH_BOOST_DEBUG := false
 
 # The list below is order dependent
