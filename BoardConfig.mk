@@ -118,6 +118,7 @@ TARGET_TC_KERNEL := 4.9
 GAMERMOD := true
 GM_O3 := true
 GM_STRICT := true
+GM_KRAIT := true
 GM_GRAPHITE := true
 GM_BUILD_BLOCK := 0
 TOUCH_BOOST_DEBUG := false
