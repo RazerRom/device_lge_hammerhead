@@ -23,7 +23,7 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := full_hammerhead
+PRODUCT_NAME := bliss_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on HammerHead
