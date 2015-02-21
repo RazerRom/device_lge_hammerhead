@@ -114,12 +114,16 @@ TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_GCC_VERSION_ARM := 4.9-sm
 
 #GamerMod Optimizations
-GAMERMOD_OPTIMIZATION := true
-GAMERMOD_GRAPHITE := true
-GAMERMOD_KRAIT := true
-GAMERMOD_O3 := true
-GAMERMOD_STRICT := true
+ENABLE_GCCONLY := true
+FLOOP_NEST_OPTIMIZE := true
+GRAPHITE_OPTS := true
+KRAIT_TUNINGS := true
+STRICT_ALIASING := true
+TARGET_USE_PIPE := true
+USE_HOST_4_8 := true
+USE_O3_OPTIMIZATIONS := true
 
+GAMERMOD_BUILD_BLOCK := 0
 TOUCH_BOOST_DEBUG := false
 
 # The list below is order dependent
