@@ -113,14 +113,14 @@ TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 #GamerMod Optimizations
-TARGET_TC_ROM := 4.8
-TARGET_TC_KERNEL := 4.9
-GAMERMOD := true
-GM_O3 := true
-GM_STRICT := true
-GM_KRAIT := true
-GM_GRAPHITE := true
-GM_BUILD_BLOCK := 1
+TARGET_GCC_VERSION := 4.8
+TARGET_GCC_VERISON_ARM := 4.9-sm
+GAMERMOD_OPTIMIZATION := true
+GAMERMOD_GRAPHITE := true
+GAMERMOD_KRAIT := true
+GAMERMOD_O3 := true
+GAMERMOD_STRICT := true
+
 TOUCH_BOOST_DEBUG := false
 
 # The list below is order dependent
