@@ -26,7 +26,7 @@ TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhead user_debug=31 maxcpus=2 msm_watchdog_v2.enable=1 androidboot.bootdevice=msm_sdcc.1 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhead user_debug=31 maxcpus=2 msm_watchdog_v2.enable=1 androidboot.bootdevice=msm_sdcc.1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -113,13 +113,19 @@ TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 #GamerMod Configs
-TARGET_TC_ROM := 4.8
-TARGET_TC_KERNEL := 4.9-sm
-GAMERMOD := true
-GM_GRAPHITE := true
-GM_KRAIT := true
-GM_O3 := true
-GM_STRICT := true
+# Compiler flags
+ENABLE_GCCONLY := true
+ENABLE_GRAPHITE := true
+GRAPHITE_OPTS := true
+KRAIT_TUNINGS := true
+STRICT_ALIASING := true
+SUPPRES_UNUSED_WARNING := true
+TARGET_GCC_VERSION_EXP := 4.8
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-sm
+TARGET_USE_PIPE := true
+USE_O3_OPTIMIZATIONS := true
+
+#Build Block
 GM_BUILD_BLOCK := 0
 
 TOUCH_BOOST_DEBUG := false
