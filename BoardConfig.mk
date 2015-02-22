@@ -111,19 +111,17 @@ BOARD_SEPOLICY_DIRS += \
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_GCC_VERSION_ARM := 4.9-sm
 
-#GamerMod Optimizations
-ENABLE_GCCONLY := true
-FLOOP_NEST_OPTIMIZE := true
-GRAPHITE_OPTS := true
-KRAIT_TUNINGS := true
-STRICT_ALIASING := true
-TARGET_USE_PIPE := true
-USE_HOST_4_8 := true
-USE_O3_OPTIMIZATIONS := true
+#GamerMod Configs
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.9-sm
+GAMERMOD := true
+GM_GRAPHITE := true
+GM_KRAIT := true
+GM_O3 := true
+GM_STRICT := true
+GM_BUILD_BLOCK := 0
 
-GAMERMOD_BUILD_BLOCK := 0
 TOUCH_BOOST_DEBUG := false
 
 # The list below is order dependent
