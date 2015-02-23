@@ -51,6 +51,8 @@ else
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerhead/bluetooth
 endif
 
+BOARD_BLUEDROID_VENDOR_CONF := device/lge/hammerhead/bluetooth/vnd_hammerhead.txt
+
 # Wifi related defines
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_WLAN_DEVICE           := bcmdhd
