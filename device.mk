@@ -265,7 +265,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.georv=true \
     ro.qti.sensors.smgr_mag_cal_en=true \
     ro.qti.sensors.step_detector=true \
-    ro.qti.sensors.step_counter=true
+    ro.qti.sensors.step_counter=true \
+    ro.qti.sensors.pick_up = false
 
 # Enable some debug messages by default
 PRODUCT_PROPERTY_OVERRIDES += \
