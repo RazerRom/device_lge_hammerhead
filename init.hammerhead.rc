@@ -23,6 +23,9 @@ on early-init
     chown system system /sys/kernel/debug/kgsl/proc
     write /sys/block/mmcblk0/bdi/read_ahead_kb 512
 
+    # Enable device specific features
+    setprop ro.product.device hammerhead
+
 on init
     # See storage config details at http://source.android.com/tech/storage/
     chmod 0701 /mnt/media_rw
