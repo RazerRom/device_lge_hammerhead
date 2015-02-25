@@ -128,7 +128,7 @@ TARGET_USE_PIPE := true
 USE_O3_OPTIMIZATIONS := true
 
 #Build Block
-GM_BUILD_BLOCK := 0
+GM_BUILD_BLOCK := 1
 
 TOUCH_BOOST_DEBUG := false
 
