@@ -112,6 +112,8 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
+TOUCH_BOOST_DEBUG := false
+
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
@@ -173,3 +175,26 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
+# BlissRom Build Options
+BLISS_BUILD_BLOCK := true
+BLISS_WIPE_CACHES := true
+
+# BlissRom Config Flags
+TARGET_TC_ROM := 4.8-linaro
+TARGET_TC_KERNEL := 4.9-linaro
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := false
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+# SaberMod
+-include vendor/bliss/config/sm.mk
