@@ -109,7 +109,7 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := aosp_defconfig
+TARGET_KERNEL_CONFIG := electro_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 TOUCH_BOOST_DEBUG := false
@@ -186,8 +186,8 @@ BLISS_BUILD_BLOCK := true
 BLISS_WIPE_CACHES := true
 
 # BlissRom Config Flags
-TARGET_TC_ROM := 4.9-linaro
-TARGET_TC_KERNEL := 6.0-linaro
+TARGET_TC_ROM := 4.8-linaro
+TARGET_TC_KERNEL := 4.9-linaro
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := false
