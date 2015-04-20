@@ -3,7 +3,7 @@
    "remote":      "br",
    "repository":  "kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "revision":    "electro"
+   "revision":    "racer"
  },
  {
    "remote":      "cm",
