@@ -109,7 +109,7 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := racer_defconfig
+TARGET_KERNEL_CONFIG := gamer_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 TOUCH_BOOST_DEBUG := false
