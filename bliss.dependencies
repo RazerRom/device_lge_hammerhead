@@ -3,12 +3,18 @@
    "remote":      "br",
    "repository":  "kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "revision":    "gamer"
+   "revision":    "electro"
  },
  {
    "remote":      "cm",
    "repository":  "android_device_qcom_common",
    "target_path": "device/qcom/common",
    "revision":    "cm-12.1"
+ },
+ {
+	"remote":      "gh",
+	"repository":  "TheMuppets/proprietary_vendor_broadcom",
+	"target_path": "vendor/broadcom",
+	"revision":    "cm-12.1"
  }
 ]
