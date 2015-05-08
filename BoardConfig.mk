@@ -186,15 +186,16 @@ BLISS_BUILD_BLOCK := true
 BLISS_WIPE_CACHES := true
 
 # BlissRom Config Flags
-TARGET_GCC_VERSION := 4.8-linaro
-TARGET_GCC_VERSION_ARM := 4.9-linaro
-USE_O3_OPTIMIZATIONS := true
-STRICT_ALIASING := false
-ENABLE_GCCONLY := true
-FLOOP_NEST_OPTIMIZE := true
-GRAPHITE_OPTS := true
-KRAIT_TUNINGS := true
-FFAST_MATH := false
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.9-linaro
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := false
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 
-# UBERTC
--include vendor/bliss/config/uber.mk
+# SaberMod
+-include vendor/bliss/config/sm.mk
