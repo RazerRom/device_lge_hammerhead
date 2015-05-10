@@ -186,11 +186,11 @@ BLISS_BUILD_BLOCK := true
 BLISS_WIPE_CACHES := true
 
 # BlissRom Config Flags
-TARGET_TC_ROM := 4.9-linaro
-TARGET_TC_KERNEL := 4.9-linaro
+TARGET_TC_ROM := 5.1-uber
+TARGET_TC_KERNEL := 5.1-uber
 BLISSIFY := true
 BLISS_O3 := true
-BLISS_STRICT := false
+BLISS_STRICT := true
 BLISS_GRAPHITE := true
 BLISS_KRAIT := true
 BLISS_PIPE := true
