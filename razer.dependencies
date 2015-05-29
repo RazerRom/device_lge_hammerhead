@@ -1,9 +1,9 @@
 [
  {
-   "remote":      "br",
+   "remote":      "rr",
    "repository":  "kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "revision":    "gamer"
+   "revision":    "razer"
  },
  {
    "remote":      "cm",

@@ -109,7 +109,7 @@ BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := gamer_defconfig
+TARGET_KERNEL_CONFIG := razer_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 TOUCH_BOOST_DEBUG := false
@@ -181,21 +181,21 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
-# BlissRom Build Options
-BLISS_BUILD_BLOCK := true
-BLISS_WIPE_CACHES := true
+# RazerRom Build Options
+RAZER_BUILD_BLOCK := true
+RAZER_WIPE_CACHES := true
 
-# BlissRom Config Flags
+# RazerRom Config Flags
 TARGET_TC_ROM := 4.9
 TARGET_TC_KERNEL := 4.9
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_STRICT := true
-BLISS_GRAPHITE := true
-BLISS_KRAIT := true
-BLISS_PIPE := true
+RAZERFY := true
+RAZER_O3 := true
+RAZER_STRICT := true
+RAZER_GRAPHITE := true
+RAZER_KRAIT := true
+RAZER_PIPE := true
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 
 # SaberMod
--include vendor/bliss/config/sm.mk
+-include vendor/razer/config/sm.mk

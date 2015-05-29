@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
     device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
-    device/lge/hammerhead/sbin/gamerbootscript.sh:root/sbin/gamerbootscript.sh \
+    device/lge/hammerhead/sbin/razerbootscript.sh:root/sbin/razerbootscript.sh \
     device/lge/hammerhead/ueventd.hammerhead.rc:root/ueventd.hammerhead.rc
 
 # Input device files for hammerhead
